@@ -5,6 +5,10 @@
 set -e
 
 branch="$(git symbolic-ref HEAD --short)"
+echo $branch
 target="${1:-staging}"
+echo $target
 
-git push "$target" "$branch:master"
+echo $"$target" "$branch:develop"
+
+# git push "$target" "$branch:develop"
